@@ -1,0 +1,37 @@
+body {
+  background-color: white; padding-top: 20px;
+  font-size: 12;
+}
+.nav-bar {/* This is my nav bar */
+  background-color:	#b6b6b6;
+  position: right;
+  text-align: right;
+  font-size: 25px;
+  font-family:sans-serif;
+}
+.nav-bar a {/* I have added those style to my navigation bar links */
+color: green;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.nav-bar a:hover {/* I have added a color on the text hover  */
+  background-color: white;
+  color: grey;
+}
+.marie-image { /* I have added background image to my home page with an heading on top */
+  /* The page advised that i can use "linear-gradient" to add a darken background effect to my image. This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),;
+  height: 10%;  /* Set a specific height */
+  background-position: center;  /* I have position and center my image to scale nicely on my screens */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.marie-text { /* I have placed my text on top of my image */
+  text-align:center;
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: green;
+}

@@ -1,0 +1,229 @@
+body {
+  background-color: white; padding-top: 20px;
+  font-size: 12;
+}
+/* nav bar */
+.nav-bar {
+  background-color:	#b6b6b6;
+  position: right;
+  text-align: right;
+  font-size: 25px;
+  font-family:sans-serif;
+}
+/* This is the navigation bar links */
+.nav-bar a {
+color: green;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+/* I have added a color on the text hover */
+.nav-bar a:hover {
+  background-color: white;
+  color: grey;
+  /* Style the navigation bar */
+}
+* {
+  box-sizing: border-box; font-size: 12;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  background-color: white;
+  width: 33.33%;
+  padding: 10px;
+  font-size: 12;
+  height: 430px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+/* Project page */
+/* Style the navigation bar */
+.row {
+  display: flex;
+}
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption for my text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text for my slideshow(1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots below my slideshow */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* i have added a fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* Tutorials */
+* {
+  box-sizing: border-box;
+}
+body {/* This is my body */
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+#myVideo {/* This is my video */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.content { /* my content for my tutorial */
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+#myBtn {/* This is my buttons */
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+#myBtn:hover {/* This is my hover */
+  background: #ddd;
+  color: black;
+}
+/* Contact page */
+* {
+  box-sizing: border-box;
+}
+/* Here is to style my inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+input[type=submit] { /* Here is to style my inputs */
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover { /* I have added hover to style */
+  background-color: #45a049;
+}
+/* Style the container/contact section */
+.contact {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+/* I have created two columns that float next to eachother for my page */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+  padding: 20px;
+}
+/* This is to clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout so that  when the screen is less than 600px wide, my two columns won't stack on top of each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

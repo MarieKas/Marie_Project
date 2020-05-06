@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marie Kasongo</title>
+<link rel="stylesheet" type="text/css" href="css/allpages.css">
+</head>
+<body>
+<img src="images/treelogo.png" alt="treelogo" style="width:200px"> <!-- This is my logo -->
+
+<div class="nav-bar"><!--This is my top navigation bar- i have added a class so it easy to apply -->
+    <a href="index.html">Home</a><!-- This is my home page -->
+    <a href="aboutme.html">About me</a><!-- This is my about me page  -->
+    <a href="project.html">Project</a><!-- This is my project page  -->
+    <a href="tutorial.html">Tutorials</a><!-- This is my Tutorial page  -->
+      <a href="Contact.html">Contact</a><!-- This is my contact page -->
+  </div>
+
+  <h1 style="color: green;">Porfolio</h1>
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/web1.png" style="width:90%">
+    <div class="text">Porfolio 1 </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/web2.png" style="width:80%">
+    <div class="text">Porfolio 2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/web3.png" style="width:80%">
+    <div class="text">Porfolio 3</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  <div class="footer">
+    <h5>Contact details</h5>
+    <p>Address: 47-48, Temple Bar, Dublin 2, D02 N725, Ireland </p>
+  </div>
+
+</body>
+
+</html>
