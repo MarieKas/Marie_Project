@@ -1,10 +1,6 @@
 body {
   background-color: white;
 }
-.fakeimg {
-  height: 200px;
-  background: #aaa;
-}
 p.italic {
   font-style: italic;
 }
